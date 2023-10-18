@@ -2,3 +2,4 @@ streamlit
 tensorflow
 opencv-python-headless
 tensorflow-hub
+Pillow == 8.2.0
