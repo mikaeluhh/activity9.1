@@ -1,7 +1,6 @@
 import streamlit as st
 import tensorflow as tf
 import tensorflow_hub as hub
-from PIL import Image
 
 # Function to load the pre-trained model
 @st.cache(allow_output_mutation=True)
@@ -88,6 +87,17 @@ if page == "Upload":
         except Exception as e:
             st.error("An error occurred while processing the image. Please make sure you've uploaded a valid image file.")
             st.error(str(e))
+if page == "About Team":
+    # Sample content for the "About Team" page
+    st.title("About Our Team")
+    st.markdown("Learn more about the team behind this web app.")
+    st.header("Our Team Members:")
+    st.markdown("1. Musni, Christian Marc")
+    st.markdown("2. Ocampo, Jane Blanca")
+    st.markdown("3. Paningbatan, Ryan")
+    st.markdown("4. Popes, Mikaela Faye")
+    st.markdown("5. Roque, Alexia Jose M. ")
+    # ... (You can add more content about the team)
 
 # Add some spacing at the end
 st.markdown("---")
