@@ -1,6 +1,7 @@
 import streamlit as st
 import tensorflow as tf
 import tensorflow_hub as hub
+from PIL import Image
 
 # Function to load the pre-trained model
 @st.cache(allow_output_mutation=True)
