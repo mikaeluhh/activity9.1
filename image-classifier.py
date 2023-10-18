@@ -17,7 +17,6 @@ page = st.radio("Select a page:", ("Home", "Upload", "About Team"))
 # File uploader
 file = st.file_uploader("Upload an image", type=["jpg", "png", "jpeg"])
 
-import cv2
 from PIL import Image, ImageOps
 import numpy as np
 
