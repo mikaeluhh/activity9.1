@@ -17,7 +17,6 @@ st.write("Using the image you've uploaded, this website classifies what time of 
 # File uploader
 file = st.file_uploader("Upload an image", type=["jpg", "png", "jpeg"])
 
-import cv2
 from PIL import Image, ImageOps
 import numpy as np
 
