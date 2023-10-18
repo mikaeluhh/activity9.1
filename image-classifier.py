@@ -13,10 +13,11 @@ st.set_page_config(page_title="Time of the Day Classification", page_icon="🌞"
 st.title("Time of the Day Classification")
 st.markdown("---")
 st.write("Using the image you've uploaded, this website classifies what time of day it is. The prediction will be either Day Time, Night Time, or Sunrise.")
-
+page = st.radio("Select a page:", ("Home", "Upload", "About Team"))
 # File uploader
 file = st.file_uploader("Upload an image", type=["jpg", "png", "jpeg"])
 
+import cv2
 from PIL import Image, ImageOps
 import numpy as np
 
